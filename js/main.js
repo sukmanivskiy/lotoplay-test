@@ -1,18 +1,9 @@
-const menu = document.getElementById('mobileMenu');
-const openBtn = document.getElementById('openMenu');
-const closeBtn = document.getElementById('closeMenu');
-const links = document.querySelectorAll('.nav__link');
+import { initModals } from './modules/modal.js';
+import { initForm } from './modules/form.js';
+import { initMobileMenu } from './modules/menu.js';
 
-openBtn.addEventListener('click', () => {
-  menu.showModal();
-});
-
-closeBtn.addEventListener('click', () => {
-  menu.close();
-});
-
-links.forEach(link => {
-  link.addEventListener('click', () => {
-    menu.close();
-  });
+document.addEventListener('DOMContentLoaded', () => {
+  initModals();
+  initForm();
+  initMobileMenu();
 });
