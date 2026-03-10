@@ -1,9 +1,35 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+  <!-- Основні метадані -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lotoplay Landing</title>
+
+  <!-- SEO метатеги -->
+  <meta name="description" content="Справжній український рок, який гуркоче в серці.">
+  <meta name="keywords" content="ключове слово1, ключове слово2, ключове слово3">
+  <meta name="author" content="Грим та Грім">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://example.com/page-url/">
+
+  <!-- Метатеги для соціальних мереж (Open Graph) -->
+  <meta property="og:title" content="Грим та Грім">
+  <meta property="og:description" content="Справжній український рок, який гуркоче в серці.">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Грим та Грім">
+
+  <!-- Метатеги для Twitter (Twitter Cards) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Грим та Грім">
+  <meta name="twitter:description" content="Справжній український рок, який гуркоче в серці.">
+  <meta name="twitter:image" content="">
+
+  <!-- Додаткові налаштування -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#121214"> <!-- Колір панелі в браузерах на Android -->
 
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/variables.css">
@@ -23,7 +49,7 @@
         <li class="nav__item"><a href="#contact" class="nav__link">Контакти</a></li>
       </ul>
     </nav>
-    <button id="openMenu" class="menu-btn mobile-visible">
+    <button id="openMenu" class="menu-btn mobile-visible" aria-label="Відкрити меню">
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -178,6 +204,7 @@
           <div class="map-card__embed">
             <iframe
               class="map-card__iframe"
+              title="Наша локація"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1270.738038770932!2d30.536340602024026!3d50.43223242319897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf05f1caf4c1%3A0x3ee71a24ff962a6b!2z0LHRg9C70YzQstCw0YAg0JvQtdGB0ZYg0KPQutGA0LDRl9C90LrQuCwgOdCQLCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1suk!2sua!4v1773164506308!5m2!1suk!2sua"
               width="400"
               height="300"
@@ -212,7 +239,7 @@
 </footer>
 
 <dialog id="mobileMenu" class="nav__modal">
-  <button id="closeMenu" class="close-btn">
+  <button id="closeMenu" class="close-btn" aria-label="Закрити меню">
     <svg fill="#000000" viewBox="0 0 24 24" id="cross" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line">
       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
       <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -236,7 +263,7 @@
     <button class="modal__close" aria-label="Закрити модальне вікно" data-close-modal>&times;</button>
     <h3 class="modal__title">Замовлення квитка</h3>
     <p class="modal__text">Залиште свої дані, і ми зв'яжемося з вами!</p>
-    <!-- Сюди пізніше додати просту формочку -->
+    <!-- Сюди пізніше можна додати просту формочку -->
   </div>
 </dialog>
 
