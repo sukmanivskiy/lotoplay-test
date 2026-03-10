@@ -7,6 +7,7 @@
 
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/utils.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -15,13 +16,24 @@
     <a href="#" class="logo" aria-label="Головна сторінка">G&G</a>
 
     <nav class="nav" aria-label="Головне меню">
-      <ul class="nav__list">
+      <ul class="nav__list mobile-hidden">
         <li class="nav__item"><a href="#history" class="nav__link">Про гурт</a></li>
         <li class="nav__item"><a href="#concerts" class="nav__link">Концерти</a></li>
         <li class="nav__item"><a href="#gallery" class="nav__link">Галерея</a></li>
         <li class="nav__item"><a href="#contact" class="nav__link">Контакти</a></li>
       </ul>
     </nav>
+    <button id="openMenu" class="menu-btn mobile-visible">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <path d="M1 12C1 11.4477 1.44772 11 2 11H22C22.5523 11 23 11.4477 23 12C23 12.5523 22.5523 13 22 13H2C1.44772 13 1 12.5523 1 12Z" fill="currentColor"></path>
+          <path d="M1 4C1 3.44772 1.44772 3 2 3H22C22.5523 3 23 3.44772 23 4C23 4.55228 22.5523 5 22 5H2C1.44772 5 1 4.55228 1 4Z" fill="currentColor"></path>
+          <path d="M1 20C1 19.4477 1.44772 19 2 19H22C22.5523 19 23 19.4477 23 20C23 20.5523 22.5523 21 22 21H2C1.44772 21 1 20.5523 1 20Z" fill="currentColor"></path>
+        </g>
+      </svg>
+    </button>
   </div>
 </header>
 
@@ -185,6 +197,26 @@
     </div>
   </div>
 </footer>
+
+<dialog id="mobileMenu" class="nav__modal">
+  <button id="closeMenu" class="close-btn">
+    <svg fill="#000000" viewBox="0 0 24 24" id="cross" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line">
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+      <g id="SVGRepo_iconCarrier">
+        <path id="primary" d="M19,19,5,5M19,5,5,19" style="fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path>
+      </g>
+    </svg>
+  </button>
+  <nav aria-label="Мобільне меню" class="nav__modal-menu">
+    <ul class="nav__list">
+      <li class="nav__item"><a href="#history" class="nav__link">Про гурт</a></li>
+      <li class="nav__item"><a href="#concerts" class="nav__link">Концерти</a></li>
+      <li class="nav__item"><a href="#gallery" class="nav__link">Галерея</a></li>
+      <li class="nav__item"><a href="#contact" class="nav__link">Контакти</a></li>
+    </ul>
+  </nav>
+</dialog>
 
 <dialog class="modal" id="ticket-modal">
   <div class="modal__content">
