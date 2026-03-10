@@ -13,3 +13,9 @@
   border-radius: var(--radius-sm);
   overflow: hidden;
 }
+
+@media (max-width: 590px) {
+  .map-card {
+    padding: var(--padding-sm);
+  }
+}

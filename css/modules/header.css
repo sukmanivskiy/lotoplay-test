@@ -30,6 +30,7 @@
 @media (max-width: 768px) {
   .header {
     position: fixed;
+    z-index: 10;
     background-color: var(--color-bg);
     -webkit-box-shadow: 0px 7px 17px 9px var(--color-bg);
     box-shadow: 0px 7px 17px 9px var(--color-bg);

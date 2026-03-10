@@ -3,10 +3,7 @@
   max-width: var(--container-width);
   margin: 0 auto;
   padding: 0 var(--container-padding-x);
-  
-  @media (max-width: 768px) {
-    padding: 0 calc(var(--container-padding-x) / 3);
-  }
+
 }
 .mobile-visible {
   display: none !important;
@@ -30,7 +27,67 @@
   text-align: center;
 }
 
+
+.modal {
+  padding: 30px;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--color-bg-card, #1c1c21); /* Твій колір фону карток */
+  color: var(--color-text, #ffffff);
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+.modal[open] {
+  animation: modalFadeIn 0.3s ease-out normal;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  color: #a0a0a0;
+  transition: color var(--transition-fast, 0.3s);
+}
+
+.modal__close:hover {
+  color: var(--color-accent-pink, #ff3b5c);
+}
+
+.modal__title {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.modal__text {
+  margin-bottom: 20px;
+  color: #a0a0a0;
+  font-size: 14px;
+}
+
 @media (max-width: 768px) {
+  .container {
+    padding: 0 calc(var(--container-padding-x) / 3);
+  }
+
   .mobile-visible {
     display: inline-block !important;
   }
