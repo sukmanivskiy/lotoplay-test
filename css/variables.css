@@ -1,1 +1,15 @@
+:root {
+  --color-bg: #121214;
+  --color-bg-card: #1c1c21;
+  --color-text: #ffffff;
+  --color-text-muted: #a0a0a0;
+  --color-accent-yellow: #ffdb4d;
+  --color-accent-pink: #ff3b5c;
 
+  --font-main: 'Inter';
+
+  --container-width: 1200px;
+  --container-padding-x: 15px;
+
+  --transition-fast: 0.3s ease;
+}
