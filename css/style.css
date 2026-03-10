@@ -7,6 +7,9 @@
 @import "modules/team.css";
 @import "modules/member-card.css";
 @import "modules/history.css";
+@import "modules/contact.css";
+@import "modules/form.css";
+@import "modules/map-card.css";
 
 @font-face {
   @font-face {

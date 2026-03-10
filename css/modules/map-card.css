@@ -1,0 +1,15 @@
+.map-card {
+  width: 100%;
+  border: 1px solid var(--color-border-gray);
+  background-color: var(--color-bg-input);
+  border-radius: var(--radius-sm);
+  padding: var(--padding-md);
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gap-sm) * 3);
+}
+.map-card__iframe {
+  width: 100%;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}

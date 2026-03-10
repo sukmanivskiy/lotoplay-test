@@ -1,5 +1,6 @@
 :root {
   --color-bg: #121214;
+  --color-bg-input: #1c1c26;
   --color-bg-card: #232733;
   --color-border-gray: #414152;
   --color-text: #ffffff;
@@ -22,6 +23,7 @@
   --gap-sm: 5px;
   --gap-md: 35px;
 
+  --radius-xs: 4px;
   --radius-sm: 8px;
   --radius-md: 16px;
 

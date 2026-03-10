@@ -150,12 +150,12 @@
   </section>
 
   <section class="contact" id="contact">
-    <div class="container">
+    <div class="container contact__inner">
       <h2 class="section-title section-title--center">Зв'яжись з нами</h2>
       <p class="section-subtitle">Хочеш заказати виступ або маєш питання? Пиши!</p>
 
-      <div class="contact__grid">
-        <form class="form" id="contact-form" novalidate>
+      <div class="contact__info">
+        <form class="form contact__form" id="contact-form" novalidate>
           <div class="form__row">
             <div class="form__group">
               <label for="name" class="form__label">Ім'я</label>
@@ -168,7 +168,7 @@
           </div>
           <div class="form__group">
             <label for="message" class="form__label">Повідомлення</label>
-            <textarea id="message" name="message" class="form__textarea" placeholder="Розкажи про свої ідеї..." required></textarea>
+            <textarea id="message" name="message" class="form__input form__input--textarea" placeholder="Розкажи про свої ідеї..." required></textarea>
           </div>
           <button type="submit" class="btn btn--pink form__btn">Відправити</button>
         </form>
@@ -176,7 +176,18 @@
         <div class="map-card">
           <h3 class="map-card__title">Наше місцезнаходження</h3>
           <div class="map-card__embed">
-            <!-- Сюди потім вставити iframe з Google Maps -->
+            <iframe
+              class="map-card__iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1270.738038770932!2d30.536340602024026!3d50.43223242319897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf05f1caf4c1%3A0x3ee71a24ff962a6b!2z0LHRg9C70YzQstCw0YAg0JvQtdGB0ZYg0KPQutGA0LDRl9C90LrQuCwgOdCQLCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1suk!2sua!4v1773164506308!5m2!1suk!2sua"
+              width="400"
+              height="300"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+
+            </iframe>
           </div>
         </div>
       </div>
