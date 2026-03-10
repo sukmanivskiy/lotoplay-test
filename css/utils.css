@@ -16,6 +16,15 @@
   display: block;
 }
 
+.text-highlight {
+  color: var(--color-accent-blue);
+  font-weight: 700;
+}
+
+.section-title {
+  font-size: 2rem;
+}
+
 @media (max-width: 768px) {
   .mobile-visible {
     display: inline-block !important;
@@ -24,9 +33,9 @@
   .mobile-hidden {
     display: none !important;
   }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
 }
 
-.text-highlight {
-  color: var(--color-accent-blue);
-  font-weight: 700;
-}

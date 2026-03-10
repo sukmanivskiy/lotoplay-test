@@ -22,6 +22,10 @@
 
 }
 
+.concert-row:first-child {
+  color: var(--color-text-muted);
+}
+
 .concerts__title, .concert-row {
   min-height: 70px;
   padding: var(--padding-sm);
