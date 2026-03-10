@@ -1,6 +1,8 @@
 @import "modules/header.css";
 @import "modules/nav.css";
 @import "modules/main.css";
+@import "modules/hero.css";
+@import "modules/button.css";
 
 @font-face {
   @font-face {

@@ -3,19 +3,26 @@
   --color-bg-card: #1c1c21;
   --color-text: #ffffff;
   --color-text-muted: #a0a0a0;
-  --color-accent-yellow: #ffdb4d;
+  --color-accent-yellow: #ffd500;
   --color-accent-pink: #ff3b5c;
+  --color-accent-blue: #00e4ff;
 
   --font-main: 'Inter';
 
-  --font-size-base: clamp(16px, 0.4vw + 14px, 18px);
+  --font-size-base: 14px;
 
   --container-width: 1280px;
   --container-padding-x: 60px;
+  --container-padding-y: 40px;
 
   --padding-sm: 10px;
 
   --gap-sm: 5px;
+  --gap-md: 35px;
+
+  --radius-sm: 8px;
+
+  --header-height: 80px;
 
   --transition-fast: 0.3s ease;
 }

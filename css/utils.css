@@ -8,25 +8,25 @@
     padding: 0 calc(var(--container-padding-x) / 3);
   }
 }
-/* За замовчуванням кнопка прихована */
 .mobile-visible {
   display: none !important;
-}
-
-/* Показуємо тільки на мобільних */
-@media (max-width: 768px) {
-  .mobile-visible {
-    display: inline-block !important;
-  }
 }
 
 .mobile-hidden {
   display: block;
 }
 
-/* Показуємо тільки на мобільних */
 @media (max-width: 768px) {
+  .mobile-visible {
+    display: inline-block !important;
+  }
+
   .mobile-hidden {
     display: none !important;
   }
+}
+
+.text-highlight {
+  color: var(--color-accent-blue);
+  font-weight: 700;
 }
