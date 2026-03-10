@@ -1,6 +1,7 @@
 :root {
   --color-bg: #121214;
-  --color-bg-card: #1c1c21;
+  --color-bg-card: #232733;
+  --color-border-gray: #414152;
   --color-text: #ffffff;
   --color-text-muted: #a0a0a0;
   --color-accent-yellow: #ffd500;
@@ -16,11 +17,13 @@
   --container-padding-y: 40px;
 
   --padding-sm: 10px;
+  --padding-md: 20px;
 
   --gap-sm: 5px;
   --gap-md: 35px;
 
   --radius-sm: 8px;
+  --radius-md: 16px;
 
   --header-height: 80px;
 

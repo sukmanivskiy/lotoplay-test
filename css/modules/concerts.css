@@ -1,0 +1,81 @@
+.concerts {
+  padding: calc(var(--container-padding-y) * 2) calc(var(--container-padding-x) * 2);
+}
+
+.concerts__inner {
+  background-color: var(--color-bg-card);
+  padding: 0;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-gray);
+}
+
+.concerts__title {
+  display: flex;
+  align-items: center;
+}
+
+.concert-row {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  align-items: center;
+  gap: var(--gap-sm);
+
+}
+
+.concerts__title, .concert-row {
+  min-height: 70px;
+  padding: var(--padding-sm);
+  padding-inline: var(--padding-md);
+}
+
+.concerts__title, .concert-row:not(:last-child) {
+  border-bottom: 1px solid var(--color-border-gray);
+}
+
+@media (max-width: 1024px) {
+  .concert-row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+    align-items: center;
+
+  }
+}
+
+@media (max-width: 768px) {
+  .concerts {
+    padding: var(--container-padding-y) calc(var(--container-padding-x) / 2);
+  }
+
+  .concert-row__col--quantity {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .concerts__title, .concert-row {
+    padding-inline: var(--padding-sm);
+  }
+
+}
+
+@media (max-width: 590px) {
+  .concert-row__col--button {
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+
+@media (max-width: 380px) {
+  .concert-row {
+    grid-template-columns: 2fr 1fr 1.5fr;
+
+  }
+  .concert-row__col--button {
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+
+  }
+}
